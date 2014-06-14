@@ -6,9 +6,11 @@ A simple script to add text and a colored overlay to chosen images on a page
 ## INSTALLATION
 ---------------
 Simply add
+
       $ <script type="text/javascript" src="colorize.js"></script>
       
 To your page and load the initColorize function 
+
       $ <body onload="initColorize();">
       
 ## USAGE
