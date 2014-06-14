@@ -70,7 +70,7 @@
       ctx.fillStyle = getTextColor(color);
       ctx.font = "bold 16px Arial";
       ctx.textAlign = 'center';
-      text=imgElement.getAttribute("canvasText");
+      text=imgElement.getAttribute("colorizeText");
       text=text==null?'':text;
       ctx.fillText(text, canvas.width/2, canvas.height/2);
       //Replace the image with the canvas content(base64)
