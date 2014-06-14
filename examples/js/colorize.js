@@ -67,16 +67,24 @@
       }
       //Fill the canvas with said color
       ctx.putImageData(map,0,0);
-      ctx.globalAlpha=0.8;
+      ctx.globalAlpha=1;
       ctx.fillStyle=color;
       ctx.fillRect(0,0,canvas.width,canvas.height);
             
       //Set the text color to black or white
-      ctx.fillStyle = getTextColor(color);
-      ctx.font = "bold 16px Arial";
-      ctx.textAlign = 'center';
       text=imgElement.getAttribute("colorizeText");
       text=text==null?'':text;
+      ctx.fillStyle = getTextColor(color);
+      var txtwidth=imgElement.getAttribute("colorizeWidth");
+      if(txtwidth==null){
+            var txtwidth=80;
+            ctx.font = "bold 80pt Calibri";
+            txtwidth=txtwidth*canvas.width/ctx.measureText(text).width
+            txtwidth=Math.floor(txtwidth*0.8);
+      }
+      ctx.font = "bold"+" "+txtwidth+"pt Arial";
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
       ctx.fillText(text, canvas.width/2, canvas.height/2);
       //Replace the image with the canvas content(base64)
       imgElement.src = canvas.toDataURL();
