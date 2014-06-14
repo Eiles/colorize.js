@@ -1,0 +1,16 @@
+div{
+      display: block;
+      text-align: center;
+}
+
+#header{
+      height: 300px;
+}
+
+h1{
+      font-size: 80px;
+}
+
+img{
+      width:500px;
+}
