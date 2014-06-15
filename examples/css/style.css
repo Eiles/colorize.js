@@ -1,16 +1,37 @@
+
+@font-face
+{     
+      
+      font-family: "Quadranta";
+      src: url("../fonts/Quadranta-Bold.ttf");
+}
+body{
+      background: #EBD5AE;
+      margin:0;
+}
 div{
+      font-family:"Quadranta",
       display: block;
       text-align: center;
+      margin:0;
+      margin-bottom: 20px;
+      padding:0;
 }
 
 #header{
       height: 300px;
+      background-image: url("../img/stripe.png");
+      border-bottom: grey 1px solid;
+      margin-bottom: 50px;
+}
+#header img{
+      width:500px;
 }
 
 h1{
       font-size: 80px;
 }
 
-img{
+.colorize{
       width:500px;
 }
