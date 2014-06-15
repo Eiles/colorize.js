@@ -1,16 +1,8 @@
-
-@font-face
-{     
-      
-      font-family: "Quadranta";
-      src: url("../fonts/Quadranta-Bold.ttf");
-}
 body{
       background: #EBD5AE;
       margin:0;
 }
 div{
-      font-family:"Quadranta",
       display: block;
       text-align: center;
       margin:0;
@@ -23,7 +15,12 @@ div{
       background-image: url("../img/stripe.png");
       border-bottom: grey 1px solid;
       margin-bottom: 50px;
+      font-family: Oswald;
+      font-weight: normal;
+      font-size: 16px;
+      color:#5a5a5a;
 }
+
 #header img{
       width:500px;
 }
